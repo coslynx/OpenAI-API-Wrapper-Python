@@ -1,0 +1,83 @@
+# Ignore build artifacts
+.venv
+__pycache__
+*.pyc
+
+# Ignore test results
+/tests/.pytest_cache
+/tests/__pycache__
+*.egg-info
+*.egg
+
+# Ignore documentation files
+docs/
+/docs/
+/docs
+docs
+/docs/
+*.md
+*.rst
+/docs/
+/docs
+docs
+/docs
+*.tex
+*.pdf
+
+# Ignore editor configuration files
+.idea/
+.vscode/
+.gitattributes
+
+# Ignore logging files
+*.log
+/logs
+/logs/
+
+# Ignore database files
+/db.sqlite3
+/db.sqlite
+
+# Ignore migrations files
+/migrations
+
+# Ignore unused files
+/commands.json
+/startup.sh
+/tests/test_services.py
+/tests/test_models.py
+/db/schemas/__init__.py
+/db/models/__init__.py
+/config/settings.py
+/core/services/openai_service.py
+/core/models/models.py
+/utils/logger.py
+
+# Ignore deployment files
+/zappa_settings.json
+
+# Ignore generated documentation files
+/dist
+/build
+/dist
+/build
+
+# Ignore .pytest_cache
+/tests/.pytest_cache
+
+# Ignore .pyc files
+*.pyc
+
+# Ignore unused files
+/core/__init__.py
+/db/__init__.py
+/tests/__init__.py
+/utils/__init__.py
+
+# Ignore other files
+/LICENSE
+/CONTRIBUTING.md
+/.github
+/README.md
+/.gitignore
+/package.json
