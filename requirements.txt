@@ -1,0 +1,29 @@
+# This file lists all the dependencies required for the AI Wrapper for OpenAI Requests project.
+# It ensures consistent environment setup across different development machines and deployment environments.
+
+# Core Python Modules
+import os
+import json
+
+# Third-Party Packages
+fastapi==0.115.2
+uvicorn==0.32.0
+pydantic==2.9.2
+psycopg2==2.9.10
+sqlalchemy==2.0.36
+pyjwt==2.9.0
+openai==1.52.0
+pytest==8.3.3
+black==24.10.0
+dotenv==0.0.5
+zappa==0.59.0
+structlog==24.4.0
+sentry-sdk==2.17.0
+
+# Internal Modules
+from .utils.logger import get_logger
+from .core.models.models import RequestBody, ResponseModel
+from .core.services.openai_service import OpenAIService
+from .db.models import User
+from .db.schemas import UserSchema
+from .auth.jwt_handler import create_access_token
